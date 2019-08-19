@@ -1,0 +1,29 @@
+{
+  "name": "articles-products-and-express",
+  "version": "1.0.0",
+  "description": "## Tests Let the **tests drive your development** or write your tests after. The choice is up to you! As for the testing tools use:   - [mocha](https://mochajs.org/)   - [chai](https://chaijs.com/)   - [supertest](https://github.com/visionmedia/supertest)     - [supertest is built upon `superagent` so these docs will be helpful as well](https://github.com/visionmedia/superagent)",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-watch": "^5.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewObiano/articles-products-and-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewObiano/articles-products-and-express/issues"
+  },
+  "homepage": "https://github.com/AndrewObiano/articles-products-and-express#readme"
+}
