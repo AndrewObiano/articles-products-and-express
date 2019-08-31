@@ -1,9 +1,24 @@
-<a href="/articles"><button>GO BACK</button></a>
+<div class="bigContain">
+    <div class="frontContain sec">
+        <div class="frontChild sec">
 
-<form id="myInput" action="/articles" method="post">
-    Title: <input type="text" name="title"><br>
-    Description: <input type="text" name="description"><br>
-    Author: <input type="text" name="author"><br>
+            <h1 class="indexHead">Make a new article</h1>
+            <a href="/articles"><button>GO BACK</button></a>
 
-    <input type="submit" value="Submit">
-</form>
+            <hr class="line">
+
+            <form id="myInput" action="/articles" method="post">
+                Title: <input type="text" name="title" class="twelve columns"><br>
+
+                Author: <input type="text" name="author" class="twelve columns"><br>
+
+                Description: <textarea class="twelve columns" name="description" cols="30" rows="10"></textarea><br>
+
+                <input class="button-primary" type="submit" value="Submit">
+            </form>
+
+            {{> message}}
+
+        </div>
+    </div>
+</div>

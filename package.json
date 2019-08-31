@@ -8,7 +8,9 @@
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "gulp": "^4.0.2",
-    "gulp-watch": "^5.0.1"
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "method-override": "^3.0.0"
   },
   "devDependencies": {},
   "scripts": {

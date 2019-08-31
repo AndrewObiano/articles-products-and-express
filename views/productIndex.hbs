@@ -1,0 +1,50 @@
+<div class="bigContain">
+    <div class="frontContain sec">
+        <div class="frontChild sec">
+
+            <h1 class="indexHead">Products</h1>
+            <a href="/"><button>GO BACK</button></a>
+            <a href="/products/new"><button>MAKE A NEW PRODUCT</button></a>
+            {{> success}}
+            <hr class="line">
+
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>ID</th>
+                        <th>Inventory</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each theProducts}}
+                    <tr>
+                        <td>
+                            <a class="index" href="/products/{{id}}">{{name}}</a>
+                        </td>
+                        <td>${{price}}</td>
+                        <td>{{id}}</td>
+                        <td>{{inventory}}</td>
+                        <td>
+                            <a class="index" href="/products/{{id}}/edit">Edit</a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+{{!-- Stops reposting a new article upon refreshing page --}}
+<script>
+    if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
+</script>

@@ -1,13 +1,18 @@
-<h1>I am now viewing the article</h1>
-<a href="/articles"><button>GO BACK</button></a>
+<div class="bigContain">
+    <div class="frontContain sec">
+        <div class="frontChild sec">
 
+            <h1 class="indexHead">{{title}}</h1>
+            <a href="/articles"><button>GO BACK</button></a>
+            <hr class="line">
 
-<div>
-    {{title}}
-    <li>
-        {{author}}
-    </li>
-    <li>
-        {{description}}
-    </li>
+            {{> author}}<br>
+            <div>
+                <p>
+                    {{description}}
+                </p>
+            </div>
+
+        </div>
+    </div>
 </div>
