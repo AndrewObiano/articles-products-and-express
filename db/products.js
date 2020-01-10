@@ -28,7 +28,7 @@ function getProducts() {
 function getSingleProduct(target) {
   let elementName = "";
   products.forEach(element => {
-    if (element.id == target) {
+    if (element.id === target) {
       elementName = element;
     }
   });
@@ -62,9 +62,9 @@ function editProduct(name, price, inventory, id) {
   });
 }
 
-function deleteProduct(name) {
+function deleteProduct(id) {
   products.forEach(element => {
-    if (element.name === name) {
+    if (element.id === id) {
       products.splice(products.indexOf(element), 1);
     }
   });

@@ -65,8 +65,14 @@ router.put("/:urlTitle", (req, res) => {
 });
 
 router.delete("/:urlTitle", (req, res) => {
-  articlesDB.deleteArticle(req.body.urlTitle);
-  res.redirect("/articles");
+  if (req.body.urlTitle) {
+    articlesDB.deleteArticle(req.body.urlTitle);
+    res.redirect("/articles");
+  } else {
+    res.render("editArticle", {
+      message: "Sorry, that article doesn't exist."
+    });
+  }
 });
 
 module.exports = router;

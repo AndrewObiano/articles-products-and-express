@@ -66,8 +66,14 @@ router.put("/:id", (req, res) => {
 });
 
 router.delete("/:id", (req, res) => {
-  productsDB.deleteProduct(req.body.name);
-  res.redirect("/products");
+  if (req.body.id) {
+    productsDB.deleteProduct(req.body.id);
+    res.redirect("/products");
+  } else {
+    res.render("editProduct", {
+      message: "Sorry, that product doesn't exist."
+    });
+  }
 });
 
 module.exports = router;
