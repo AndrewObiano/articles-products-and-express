@@ -1,0 +1,26 @@
+<div class="bigContain">
+    <div class="frontContain sec">
+        <div class="frontChild sec">
+
+            <h1 class="indexHead">Edit</h1>
+            <a href="/products"><button>GO BACK</button></a>
+            <hr class="line">
+
+            <form id="myInput" action="/products/edit/?_method=put" method="post">
+                <input type="hidden" name="id" value="{{id}}">
+                Name: <input type="text" name="name" value="{{name}}" class="twelve columns"><br>
+                Price: <input type="number" name="price" value="{{price}}" class="twelve columns"><br>
+                Inventory: <input type="number" name="inventory" value="{{inventory}}" class="twelve columns"><br>
+                <input class="button-primary" type="submit" value="Submit">
+            </form>
+
+            <form id="myInput" action="/products/edit/?_method=delete" method="post">
+                <input type="hidden" name="id" value='{{id}}'>
+                <input id="delete" type="submit" value="Delete">
+            </form>
+
+            {{> message}}
+
+        </div>
+    </div>
+</div>

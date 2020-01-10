@@ -1,0 +1,21 @@
+<div class="bigContain">
+    <div class="frontContain sec">
+        <div class="frontChild sec">
+
+            <h1 class="indexHead">Make a new product</h1>
+            <a href="/products"><button>GO BACK</button></a>
+            <hr class="line">
+
+            <form id="myInput" action="/products" method="post">
+                Name: <input type="text" name="name" class="twelve columns"><br>
+                Price: <input type="number" name="price" class="twelve columns"><br>
+                Inventory: <input type="number" name="inventory" class="twelve columns"><br>
+
+                <input class="button-primary" type="submit" value="Submit">
+            </form>
+
+            {{> message}}
+
+        </div>
+    </div>
+</div>

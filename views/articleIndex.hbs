@@ -1,0 +1,34 @@
+<div class="bigContain">
+    <div class="frontContain sec">
+        <div class="frontChild sec">
+
+            <h1 class="indexHead">Articles</h1>
+            <a href="/"><button>GO BACK</button></a>
+            <a href="/articles/new"><button>MAKE A NEW ARTICLE</button></a>
+            {{> success}}
+            <hr class="line">
+
+            <div>
+                {{#each theArticles }}
+                <div>
+                    <a class="index artName" href="/articles/{{urlTitle}}">{{title}}</a>
+                    <a class="index artEdit" href="/articles/{{urlTitle}}/edit">Edit</a>
+                    {{> author}}
+                    <div>
+                        {{description}}
+                    </div>
+                    <hr class="line">
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{{!-- Stops reposting a new article upon refreshing page --}}
+<script>
+    if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
+</script>

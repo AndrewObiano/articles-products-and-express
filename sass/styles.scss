@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(63, 58, 58);
+}
+
+.line {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.bigContain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  .frontContain {
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.75);
+    position: relative;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    height: 80vh;
+    width: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    overflow-y: auto;
+    .frontChild {
+      text-align: center;
+    }
+    .frontChild.sec {
+      width: 150vh;
+      padding: 20px;
+      text-align: left;
+    }
+  }
+  .frontContain.sec {
+    justify-content: left;
+    align-items: flex-start;
+    textarea {
+      resize: none;
+    }
+  }
+}
+
+.indexHead {
+  margin-bottom: 5px;
+}
+.index {
+  color: black;
+  text-decoration: none;
+}
+.index.artName {
+  font-size: 25px;
+}
+.index.artEdit {
+  font-size: 10px;
+}
+
+.italicArt {
+  font-style: italic;
+}
+
+.success {
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  color: rgb(0, 199, 0);
+}
+
+.message {
+  color: red;
+}
+
+#delete {
+  background-color: red;
+  color: white;
+  &:hover {
+    background-color: firebrick;
+  }
+}
+#myInput {
+  margin-bottom: 0px;
+}

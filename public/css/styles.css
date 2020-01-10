@@ -1,0 +1,74 @@
+body {
+  background-color: #3f3a3a; }
+
+.line {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.bigContain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh; }
+  .bigContain .frontContain {
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.75);
+    position: relative;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    height: 80vh;
+    width: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    overflow-y: auto; }
+    .bigContain .frontContain .frontChild {
+      text-align: center; }
+    .bigContain .frontContain .frontChild.sec {
+      width: 150vh;
+      padding: 20px;
+      text-align: left; }
+  .bigContain .frontContain.sec {
+    justify-content: left;
+    align-items: flex-start; }
+    .bigContain .frontContain.sec textarea {
+      resize: none; }
+
+.indexHead {
+  margin-bottom: 5px; }
+
+.index {
+  color: black;
+  text-decoration: none; }
+
+.index.artName {
+  font-size: 25px; }
+
+.index.artEdit {
+  font-size: 10px; }
+
+.italicArt {
+  font-style: italic; }
+
+.success {
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  color: #00c700; }
+
+.message {
+  color: red; }
+
+#delete {
+  background-color: red;
+  color: white; }
+  #delete:hover {
+    background-color: firebrick; }
+
+#myInput {
+  margin-bottom: 0px; }
