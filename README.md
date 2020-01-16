@@ -1,3 +1,5 @@
+To view, run `node server.js` on the root directory.
+
 # Articles, Products, and Express - Oh my!
 
 ## Tests
